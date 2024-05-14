@@ -1,0 +1,48 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../../assests/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text{
+    text-align: center;
+    max-width: 600px;
+
+}
+
+.hero-text h1{
+    font-size: 20px;
+    font-weight: 200;
+}
+.hero-text p{
+    max-width: 500px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+
+.image-row {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center; /* Center align items horizontally */
+    margin-top: 20px; /* Add margin on top for spacing */
+  }
+  
+  .image-with-text {
+    text-align: center; /* Center align text */
+    margin: 0 10px 20px; /* Add spacing between images */
+    flex: 1 1 calc(33.33% - 20px); /* Each item occupies 1/3 of the available space (minus margin) */
+    max-width: calc(33.33% - 20px); /* Set maximum width for each item */
+  }
+  
+  .image-with-text img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+  }
+  
+  .image-with-text p {
+    margin-top: 5px; /* Add some spacing between image and text */
+  }
